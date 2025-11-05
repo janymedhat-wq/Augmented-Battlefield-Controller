@@ -1,6 +1,6 @@
-This project demonstrates a custom DIY game controller combining physical pushbuttons on an Arduino and computer vision via OpenCV to control in-game actions in Battlefield 2. It’s a fusion of hardware interfacing, real-time vision processing, and Python automation, showcasing a hands-on approach to interactive gaming systems.
+This project demonstrates a custom DIY game controller combining physical pushbuttons on an Arduino and computer vision via OpenCV to control in-game actions in Battlefield 2. It’s a fusion of hardware interfacing, real-time vision processing, and Python automation, showcasing a hands-on approach to interactive gaming systems.The software stack supports modular expansion for additional physical inputs or multi-color gesture detection, and a live display visualizes contours and control states for immediate feedback
 
-Core Features
+# Core Features
 
 Physical Button Inputs (Arduino)
 
@@ -20,7 +20,7 @@ Red object detected → Throw Grenade (g)
 
 Real-time contour detection ensures fast and accurate gesture recognition even under variable lighting.
 
-Python Integration
+# Python Integration
 
 PyAutoGUI simulates keyboard and mouse events based on Arduino input and OpenCV detection.
 
@@ -42,14 +42,4 @@ Easily add more buttons or gestures for additional game actions (reload, crouch,
 
 OpenCV detection can track multiple colors or even head movements for advanced camera control.
 
-Technical Highlights
 
-Arduino Uno: Pushbutton inputs and serial communication.
-
-Python 3: Handles integration between Arduino, OpenCV, and PyAutoGUI.
-
-OpenCV: Real-time image processing for gesture recognition.
-
-PyAutoGUI: Sends keyboard and mouse events directly to the game.
-
-Multithreading: Ensures non-blocking input handling from both hardware and computer vision.
